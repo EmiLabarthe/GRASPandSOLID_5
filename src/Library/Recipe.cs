@@ -9,7 +9,8 @@ using System.Collections.Generic;
 
 namespace Full_GRASP_And_SOLID
 {
-    public class Recipe
+    // Se implementa la interfaz IPrintable para lograr el DIP.
+    public class Recipe: IPrintable
     {
         // Cambiado por OCP
         private IList<BaseStep> steps = new List<BaseStep>();
